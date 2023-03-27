@@ -58,12 +58,12 @@ scene.add(pointLight, ambientLight);
 
 Array(200).fill().forEach(addStar);
 
-const spaceTexture = new THREE.TextureLoader().load('space.jpg');
+const spaceTexture = new THREE.TextureLoader().load('/space.jpg');
 scene.background = spaceTexture;
 
 // Avatar
 
-const saqqTexture = new THREE.TextureLoader().load('saqq.jpg');
+const saqqTexture = new THREE.TextureLoader().load('/saqq.jpg');
 
 const saqq = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 0), new THREE.MeshBasicMaterial({ map: saqqTexture }));
 
@@ -71,8 +71,8 @@ scene.add(saqq);
 
 //nave
 
-const naveTexture = new THREE.TextureLoader().load('nave.jpg');
-const normalTexture = new THREE.TextureLoader().load('normal.jpg');
+const naveTexture = new THREE.TextureLoader().load('/nave.jpg');
+const normalTexture = new THREE.TextureLoader().load('/normal.jpg');
 
 const nave = new THREE.Mesh(
   new THREE.OctahedronGeometry(4, 0),
